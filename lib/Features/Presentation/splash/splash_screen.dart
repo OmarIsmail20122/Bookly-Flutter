@@ -1,3 +1,4 @@
+import 'package:bookly/Core/constant/color_const.dart';
 import 'package:bookly/Core/router/router_name.dart';
 import 'package:bookly/Features/Presentation/splash/Widgets/SplashLeftPage.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +59,7 @@ late AnimationController _controller;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 84, 81, 102),
+      backgroundColor: kPrimaryColor,
       body: Center(
         child: SizedBox(
           width: 250,
@@ -68,6 +69,14 @@ late AnimationController _controller;
               _buildLeftPage(),
             SizedBox(width: 20,), 
               _buildRightPage(),
+              Text(
+                'Read Free Book',
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ],
           ),
         ),

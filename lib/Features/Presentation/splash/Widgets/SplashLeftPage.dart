@@ -31,6 +31,7 @@ class SplashLeftPage extends StatelessWidget {
             isLeft ? 'My' : 'Book',
             style: const TextStyle(
               fontSize: 22,
+              color: Colors.black,
               fontWeight: FontWeight.bold,
             ),
           ),
